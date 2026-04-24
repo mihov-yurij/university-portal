@@ -27,12 +27,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-[#1a2c3d] text-white shadow-xl sticky top-0 z-50 border-b border-white/10 font-sans">
-      <div className="container mx-auto px-4 flex justify-between items-center py-3">
+      <div className="w-full pl-12 pr-6 flex justify-between items-center py-3">
         
-              <Link to="/" className="flex items-center gap-3 group shrink-0 no-underline">
+              <Link to="/" className="flex px-10 items-center gap-3 group shrink-0 no-underline">
           <img src="/favicon-maritime.png" alt="Logo" className="h-10 w-10 md:h-12 md:w-12 rounded-lg shadow-lg" />
           <div className="flex flex-col">
-            <span className="font-black text-sm md:text-lg uppercase leading-none group-hover:text-yellow-400 transition-colors">
+            <span className="font-black text-sm md:text-lg  uppercase leading-none group-hover:text-yellow-400 transition-colors">
               Морський Бізнес
             </span>
             <span className="text-[9px] text-yellow-400 font-bold uppercase tracking-wider">
@@ -41,8 +41,9 @@ const Navbar = () => {
           </div>
         </Link>
 
-                <div className="hidden lg:flex space-x-4 xl:space-x-6 items-center font-bold text-[10px] xl:text-[11px] uppercase tracking-widest">
-          <Link to="/" className="hover:text-yellow-400 transition py-4 no-underline">Головна</Link>
+                <div className="hidden lg:flex ml-auto space-x-4 xl:space-x-6 items-center font-bold text-[10px] xl:text-[11px] uppercase tracking-widest">
+
+          <Link to="/" className="hover:text-yellow-400 transition  py-4 no-underline">Головна</Link>
 
           {Object.entries(menuData).map(([key, menu]) => (
             <div 
@@ -74,7 +75,7 @@ const Navbar = () => {
             </div>
           ))}
 
-          <Link to="/contacts" className="hover:text-yellow-400 transition py-4 no-underline">Контакти</Link>
+          <Link to="/contacts" className="hover:text-yellow-400 transition pr-10 py-4 no-underline">Контакти</Link>
         </div>
 
         <Link 
