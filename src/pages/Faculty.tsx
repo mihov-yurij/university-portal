@@ -52,7 +52,7 @@ const staff: StaffMember[] = [
 
 export default function Faculty() {
   return (
-    <div className="container mx-auto px-4 py-20 min-h-screen">      
+    <div className="container maritime-bg mx-auto px-4 py-20 min-h-screen">      
       <div className="text-center mb-20">
         <h1 className="text-5xl font-black text-[#1a2c3d] uppercase tracking-tighter mb-4">
           Наш <span className="text-yellow-500">колектив</span>

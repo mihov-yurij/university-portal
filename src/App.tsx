@@ -10,10 +10,12 @@ import ContentPage from './pages/ContentPage';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white flex flex-col font-sans">      
+      {/* Главный контейнер теперь без фона, чтобы Navbar и Footer имели свои цвета */}
+      <div className="min-h-screen flex flex-col font-sans">     
         <Navbar />       
         
-        <main className="flex-grow">
+        {/* Фон .maritime-bg теперь только здесь — между шапкой и подвалом */}
+        <main className="maritime-bg flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/admission" element={<Admission />} />
@@ -30,6 +32,7 @@ function App() {
 }
 
 export default App;
+
 
 
 

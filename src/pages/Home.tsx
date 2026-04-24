@@ -5,8 +5,8 @@ import { FadeIn } from '../components/FadeIn';
 
 export default function Home() {
   return (
-    <div className="flex flex-col font-sans">      
-      <section className="bg-[#1a2c3d] motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-12 duration-1000 text-white min-h-screen pt-32 pb-20 px-4 flex items-center relative overflow-hidden">
+    <div className=" flex flex-col font-sans">      
+      <section className="bg-[#1a2c3d]/80 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-12 duration-1000 text-white min-h-screen pt-32 pb-20 px-4 flex items-center relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full -mr-64 -mt-64 blur-[120px]">
         </div>        
         <div className="container mx-auto relative z-10">
@@ -36,7 +36,7 @@ export default function Home() {
               </Link>
               <Link 
                 to="/about/0" 
-                className="border-2 border-white/20 hover:bg-white/10 px-10 py-5 rounded-2xl font-bold transition-all text-white text-center"
+                className="border-2 border-white/20 hover:/10 px-10 py-5 rounded-2xl font-bold transition-all text-white text-center"
               >
                 Про кафедру
               </Link>
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section className="py-20 bg-white motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-12 duration-1000 border-b border-slate-100">
+<section className="py-20 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-12 duration-1000 border-b border-slate-100">
   <div className="container mx-auto px-4">
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
       <StatCard icon={<Award size={32} />} number="90+" label="Років досвіду" />
@@ -58,7 +58,7 @@ export default function Home() {
 
 
       <FadeIn>
-      <section className="py-24 bg-slate-50 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-12 duration-1000">
+      <section className="py-24 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-12 duration-1000">
         <div className="container mx-auto px-4">
            <div className="text-center mb-16 space-y-4">
               <h2 className="text-sm font-black text-blue-600 uppercase tracking-[0.4em]">Переваги</h2>
@@ -84,39 +84,59 @@ export default function Home() {
         </div>
       </section>
       </FadeIn>      
-      <section className="py-24 bg-white motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-12 duration-1000 border-t border-slate-100">
+      <section className="py-24  motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-12 duration-1000 border-t border-slate-100">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <div className="space-y-8">
-              <h3 className="text-4xl font-black text-[#1a2c3d] uppercase leading-none tracking-tighter">
-                Ми будуємо майбутнє <br />
-                <span className="text-blue-600 italic">морської еліти</span>
-              </h3>
-              <p className="text-slate-600 text-lg leading-relaxed italic border-l-4 border-yellow-500 pl-6">
-                "Наша місія — надати студентам не лише знання, а й практичні інструменти для управління глобальними процесами."
-              </p>
-              <div className="grid grid-cols-2 gap-6 pt-4">
-                <div className="flex items-center gap-3 font-bold text-[#1a2c3d] text-sm uppercase tracking-widest">
-                  <Target className="text-yellow-500" /> Фокус на практиці
-                </div>
-                <div className="flex items-center gap-3 font-bold text-[#1a2c3d] text-sm uppercase tracking-widest">
-                  <Users className="text-yellow-500" /> Нетворкінг
-                </div>
-              </div>
-            </div>
-            <div className="bg-slate-50 p-10 rounded-[3rem] border border-slate-100">
-               <h4 className="text-center font-black uppercase text-xs tracking-widest text-slate-400 mb-8 text-[10px]">Ключові партнери</h4>
-               <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white p-6 rounded-2xl shadow-sm text-center font-black text-slate-300 uppercase tracking-tighter text-xl">AMPU</div>
-                  <div className="bg-white p-6 rounded-2xl shadow-sm text-center font-black text-slate-300 uppercase tracking-tighter text-xl">MAERSK</div>
-                  <div className="bg-white p-6 rounded-2xl shadow-sm text-center font-black text-slate-300 uppercase tracking-tighter text-xl">TIS</div>
-                  <div className="bg-white p-6 rounded-2xl shadow-sm text-center font-black text-slate-300 uppercase tracking-tighter text-xl">GOL</div>
-               </div>
-            </div>
-          </div>
-        </div>
+          {/* 1. СЕКЦИЯ С ТЕКСТОМ (ВЕРХНЯЯ) */}
+<div className="flex flex-col md:flex-row items-center justify-between p-10 gap-10">
+  <div className="max-w-2xl">
+    <h1 className="text-4xl font-black text-[#1a2c3d] mb-6">
+      МИ БУДУЄМО МАЙБУТНЄ <br/>
+      <span className="text-blue-600">МОРСЬКОЇ ЕЛІТИ</span>
+    </h1>
+    <p className="text-lg text-slate-600 italic border-l-4 border-yellow-500 pl-4">
+      "Наша місія — надати студентам не лише знання..."
+    </p>
+    {/* Остальные ваши буллиты (Нетворкинг и т.д.) */}
+  </div>
+</div>
+
+{/* 2. СЕКЦИЯ ПАРТНЕРОВ (НИЖНЯЯ, НА ВСЮ ШИРИНУ) */}
+<div className="w-full px-4 md:px-10 my-10">
+  <div className="p-8 rounded-[3.5rem] border border-white/20 bg-white/30 backdrop-blur-xl shadow-2xl">
+    <h4 className="text-center font-black uppercase text-[10px] tracking-[0.3em] text-slate-500 mb-10">
+      КЛЮЧОВІ ПАРТНЕРИ
+    </h4>
+    
+    {/* Здесь 3 или 4 колонки, чтобы карточки были ШИРОКИМИ */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      {/* Formag */}
+      <div className="bg-white/90 rounded-3xl h-28 flex items-center justify-center overflow-hidden border border-white/40 p-4">
+        <img src="/back/formag.png" className="w-full h-full object-contain scale-110" alt="Formag" />
+      </div>
+
+      {/* Maersk - с точным позиционированием */}
+      <div className="bg-white/90 rounded-3xl h-28 flex items-center justify-center overflow-hidden border border-white/40 relative">
+        <img src="/back/maersk.png" className="absolute w-[130%] max-w-none h-[100%] object-contain " alt="Maersk" />
+      </div>
+
+      {/* TIS */}
+      <div className="bg-white/90 rounded-3xl h-28 flex items-center justify-center overflow-hidden border border-white/40 p-4">
+        <img src="/back/tis.jpg" className="w-full h-full object-contain" alt="TIS" />
+      </div>
+
+      {/* AMPU */}
+      <div className="bg-white/90 rounded-3xl h-28 flex items-center justify-center overflow-hidden border border-white/40 p-4">
+        <img src="/back/ampu.png" className="w-full h-full object-contain scale-110" alt="AMPU" />
+      </div>
+
+    </div>
+  </div>
+</div>
+          </div>    
       </section>
     </div>
+
   );
 }
 
@@ -145,7 +165,7 @@ interface FeatureCardProps {
 }
 
 const FeatureCard = ({ icon, title, desc }: FeatureCardProps) => (
-  <div className="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group">
+  <div className=" p-10 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 group">
     <div className="mb-6 group-hover:scale-110 transition-transform duration-500">
       {icon}
     </div>

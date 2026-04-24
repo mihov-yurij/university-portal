@@ -21,7 +21,7 @@ const DOCUMENTS = [
 
 export default function Admission() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="maritime-bg min-h-screen">
       {/* Шапка страницы */}
       <section className="bg-[#1a2c3d] text-white py-20 px-4 relative overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">

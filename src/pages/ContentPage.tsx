@@ -90,9 +90,9 @@ if (context) {
         </header>
 
         <main className="relative">
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-[3.5rem] blur opacity-15"></div>
+          <div className="absolute -inset-1 maritime-bg from-blue-600 to-yellow-500 rounded-[3.5rem] blur opacity-15"></div>
           
-          <article className="relative bg-white rounded-[3.5rem] shadow-2xl overflow-hidden border border-slate-100">
+          <article className="relative bg-gradient-to-br from-slate-100 to-slate-200 rounded-[3.5rem] shadow-2xl overflow-hidden border border-slate-100">
             
             <div className="bg-[#1a2c3d] p-6 flex flex-col md:flex-row justify-between items-center gap-6 border-b-4 border-yellow-500">
               <div className="flex items-center gap-4 text-left">
