@@ -6,6 +6,7 @@ import Admission from './pages/Admission';
 import Contacts from './pages/Contacts';
 import Faculty from './pages/Faculty';
 import ContentPage from './pages/ContentPage';
+import About from './pages/About';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/contacts" element={<Contacts />} />        
             <Route path="/:category/:id" element={<ContentPage />} />
+            <Route path="/about/:id" element={<About />} />
           </Routes>
         </main>
 

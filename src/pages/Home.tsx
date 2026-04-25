@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Maersk - с точным позиционированием */}
       <div className="bg-white/90 rounded-3xl h-28 flex items-center justify-center overflow-hidden border border-white/40 relative">
-        <img src="/back/maersk.png" className="absolute w-[130%] max-w-none h-[100%] object-contain " alt="Maersk" />
+        <img src="/back/msc.png" className="absolute w-[130%] max-w-none h-[100%] object-contain " alt="MSC" />
       </div>
 
       {/* TIS */}
