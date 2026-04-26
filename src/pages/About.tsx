@@ -48,16 +48,27 @@ const About: React.FC = () => {
           </header>
 
           {/* Центральный блок контента */}
-          <main className="max-w-4xl mx-auto py-8">
-            <FadeIn>
-              <div className="bg-white/5 backdrop-blur-xl p-8 md:p-10 rounded-[2rem] border border-white/10 shadow-2xl text-center text-white/90">
-                <p className="text-lg md:text-xl font-bold text-white mb-6 leading-tight">
-                   Кафедра «Морський бізнес та маркетинг» є випускаючою за трьома спеціальностями</p>
-                   <p  className="text-lg md:text-xl font-bold text-white mb-6 leading-tight">
-                     "Підприємництво та торгівля", "Менеджмент" , "Маркетинг".</p>                   
-                
-                <div className="space-y-6 text-sm md:text-base opacity-80 leading-relaxed max-w-2xl mx-auto">
-                  <p>Як самостійний підрозділ кафедра була створена у вересні 2016 року, але її витоки сягають корінням 30-років минулого сторіччя, коли були створені кафедра соціально-економічних диcциплін та експлуатації морського транспорту.«Підприємництво і економіко-математичне моделювання» була створена шляхом реструктуризації наступних трьох кафедр факультету економіки і управління: «Економіка підприємства і підприємництво», «Економічна теорія і кібернетика» та «Фінансово-економічна безпека , облік та аудит» та також стала випускаючою за спеціальністю
+          <main className="max-w-4xl mx-auto py-12">
+  <FadeIn>
+    <div className="bg-white/5 backdrop-blur-2xl p-10 md:p-16 rounded-[3rem] border border-white/10 shadow-2xl">
+      
+      {/* Спеціальності */}
+      <div className="text-center mb-12">
+        <h2 className="text-white/60 uppercase tracking-[0.3em] text-[10px] font-bold mb-4">
+          Напрямки підготовки
+        </h2>
+        <p className="text-2xl md:text-3xl font-black text-white uppercase italic leading-none tracking-tighter">
+          Підприємництво • Менеджмент • Маркетинг
+        </p>
+        <div className="h-1 w-20 bg-yellow-400 mx-auto mt-6 rounded-full"></div>
+      </div>
+
+      {/* Контент */}
+      <div className="max-w-2xl mx-auto space-y-8">
+        <p className="text-lg md:text-xl text-white/90 leading-relaxed font-light text-left border-l-4 border-yellow-400/30 pl-6">
+          Як самостійний підрозділ кафедра була створена у <span className="text-yellow-400 font-bold">вересні 2016 року</span>, 
+          але її витоки сягають корінням 30-років минулого сторіччя, коли були створені кафедра соціально-економічних диcциплін та експлуатації морського транспорту.
+                  «Підприємництво і економіко-математичне моделювання» була створена шляхом реструктуризації наступних трьох кафедр факультету економіки і управління: «Економіка підприємства і підприємництво», «Економічна теорія і кібернетика» та «Фінансово-економічна безпека , облік та аудит» та також стала випускаючою за спеціальністю
                   «Підприємництво, торгівля та біржова діяльність». Завідувачем кафедри став багаторічний керівник кафедри «Економічна теорія і кібернетика», доктор економічних наук,професор Геннадій Сергійович Махуренко.  У 2018 році кафедра стала випускаючою ще за одною спеціальністю – 242
  «Туризм», та отримала свою сучасну назву –  «Підприємництво та туризм». Завідувачем кафедри була призначена доктор економічних наук, професор Савельєва Ірина Владиславівна.Розвиток 
  кафедри продовжується через створення нових освітніх програм на існуючих спеціальностях на засадах міждисциплінарності, інноваційності та студентоорієнтованості. З 2022 року кафедру очолює кандидат економічних, доцент Наврозова Юлія Олександрівна, під керівництвом якої у 2023 році була започаткована нова освітня програма «Маркетинг  та  
@@ -75,22 +86,37 @@ const About: React.FC = () => {
                    провíдним європейським університетом Copenhagen Business School ( Данія )  укладений  унікальний
                   договір, в рамках якого студенти ОП «Бізнес на морському транспорті» та ОП «Морський бізнес» без-
                   коштовно навчаються протягом семестру в CBS.Кафедра живе та розвивається. І цей розвиток можливий 
-                   лише завдяки плідній роботі її викладацького складу.</p>                  
-                </div>
-                <div className="pt-10 flex flex-wrap gap-4 justify-center">
-                  <a href="/docs/plan_2025.pdf" target="_blank" className="bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-black hover:bg-yellow-500 transition uppercase text-[10px] whitespace-nowrap">
-                    <FileText size={14} className="inline mr-1" /> План 2025
-                  </a>
-                  <a href="/docs/plan_2025.pdf" download className="border border-white/50 text-white px-6 py-3 rounded-lg font-black hover:bg-white/10 transition uppercase text-[10px] whitespace-nowrap">
-                    <Download size={14} className="inline mr-1" /> Скачати PDF
-                  </a>
-                </div>
-              </div>
-            </FadeIn>
-          </main>
+                   лише завдяки плідній роботі її викладацького складу.</p>
+
+        {/* ПРАВИЛЬНЕ КЕРІВНИЦТВО */}
+        <div className="flex items-center gap-4 pt-6">
+          <div className="h-12 w-[1px] bg-white/20"></div>
+          <div>
+            <p className="text-yellow-400 font-black uppercase text-lg tracking-tight leading-tight">
+              Наврозова Юлія Олександрівна
+            </p>
+            <p className="text-white/50 text-[10px] uppercase tracking-[0.2em] mt-1 font-bold">
+              Завідувач кафедри / Доцент / Кандидат економічних наук
+            </p>
+          </div>
         </div>
       </div>
 
+      {/* Кнопки */}
+      <div className="flex flex-wrap gap-4 justify-center mt-16">
+        <a href="/docs/plan_2025.pdf" target="_blank" className="flex items-center bg-white text-blue-900 px-10 py-4 rounded-2xl font-black hover:bg-yellow-400 transition-all duration-300 uppercase text-xs tracking-tighter">
+          <FileText size={18} className="mr-2" /> Документація
+        </a>
+        <a href="/docs/plan_2025.pdf" download className="flex items-center border-2 border-white/20 text-white px-10 py-4 rounded-2xl font-black hover:bg-white/10 transition-all uppercase text-xs tracking-tighter">
+          <Download size={18} className="mr-2" /> Скачати PDF
+        </a>
+      </div>
+
+    </div>
+  </FadeIn>
+</main>
+        </div>
+      </div>
       <Footer />
     </div>
   );
