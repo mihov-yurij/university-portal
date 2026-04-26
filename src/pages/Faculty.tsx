@@ -1,15 +1,16 @@
 import type { ReactNode } from 'react'; 
-import { Mail, Award, BookOpen, Microscope, Globe2, Lightbulb } from 'lucide-react';
+import { Mail, Award, BookOpen, Microscope, Globe2, Lightbulb,GraduationCap } from 'lucide-react';
 
 interface StaffMember {
   name: string;
   role: string;
   degree: string;
   interests: string[];
+  academicTitle: string;
   icon: ReactNode; 
   image: string;
   email: string;
-}
+  }
 
 const staff: StaffMember[] = [
   {
@@ -17,37 +18,91 @@ const staff: StaffMember[] = [
     role: "Завідувачка кафедри",
     degree: "Кандидат економічних наук, доцент",
     interests: ["Цифровізація портів", "Економіка блакитного росту", "Менеджмент"],
+    academicTitle: "Доцент",
     icon: <Globe2 size={20} className="text-blue-500" />,
     image: "/lecturers/navrozova.jpg", 
-    email: "navrozova@onmu.edu.ua"
+    email: "navrozova@onmu.edu.ua",
+
   },
   {
     name: "Савельєва Ірина Владиславівна",
     role: "Професор кафедри",
-    degree: "Доктор економічних наук, професор",
+    degree: "Доктор економічних наук",
     interests: ["Зелена логістика", "Сталий розвиток", "Міжнародний маркетинг"],
+    academicTitle: "Професор",
     icon: <Microscope size={20} className="text-purple-500" />,
     image: "/lecturers/savelyeva.jpg",
     email: "savelyeva@onmu.edu.ua"
   },
   {
-    name: "Гребенник Наталія Григорівна",
+    name: "Щербина Вероніка Володимирівна",
     role: "Доцент кафедри",
-    degree: "Кандидат економічних наук",
-    interests: ["Стартап-екосистеми", "Інновації", "Маркетингові дослідження"],
+    degree: "Кандидат економічних наук",    
+    academicTitle:"Доцент",
+    interests:  ["морський бізнес", "контейнерні перевезення", "логістика", "цифровий маркетинг", "морська торгівля", "цифрові технології в логістиці", "маркетингу", "туризмі", "інновації в готельно-ресторанному обслуговуванні на круїзних суднах"],
     icon: <Lightbulb size={20} className="text-yellow-500" />,
-    image: "/lecturers/grebennik.jpg",
-    email: "grebennyk@onmu.edu.ua"
+    image: "/lecturers/shcherbina.jpg",
+    email: "shcherbina@onmu.edu.ua"
   },
   {
-    name: "Шевченко Олена Ігорівна",
+    name: "Матвієнко Марина Валеріївна",
     role: "Доцент кафедри",
     degree: "Кандидат економічних наук",
-    interests: ["Круїзний менеджмент", "Якість послуг", "Туризм"],
+    academicTitle: "Доцент",
+    interests: ["морський бізнес, бізнес-моделі та процесу, управління фінансами, логістика, цифровий маркетинг, цифрові технології в бізнесі, маркетингу"],
     icon: <BookOpen size={20} className="text-green-500" />,
-    image: "/lecturers/shevchenko.jpg",
-    email: "shevchenko@onmu.edu.ua"
-  }
+    image: "/lecturers/matviyenko.jpg",
+    email: "matviyenko@onmu.edu.ua"
+  },
+   {
+    name: "Мельников Сергій Валерійович",
+    role: "Доцент кафедри",
+    degree: "Кандидат економічних наук",
+    academicTitle: "Доцент",
+    interests: ["моделювання бізнес-процесів підприємницької діяльності, моделювання маркетингової діяльності підприємств, бізнес і стартапи, інформаційні системи і технології в туризмі"],
+    icon: <BookOpen size={20} className="text-green-500" />,
+    image: "/lecturers/melnikov.jpg",
+    email: "melnikov@onmu.edu.ua"
+  },
+  {
+    name: "Ремзіна Наталья Андріївна",
+    role: "Доцент кафедри",
+    degree: "Кандидат економічних наук",
+    academicTitle: "Доцент",
+    interests: ["морський бізнес, бізнес-моделі та процесу, управління фінансами, логістика, цифровий маркетинг, цифрові технології в бізнесі, маркетингу"],
+    icon: <BookOpen size={20} className="text-green-500" />,
+    image: "/lecturers/remzina.jpg",
+    email: "remzina@onmu.edu.ua"
+  },
+    {
+    name: "Холоденко Анатолій Михайлович",
+    role: "Доцент кафедри",
+    degree: "Кандидат економічних наук",
+    academicTitle: "Доцент",
+    interests: ["морський бізнес, бізнес-моделі та процесу, управління фінансами, логістика, цифровий маркетинг, цифрові технології в бізнесі, маркетингу"],
+    icon: <BookOpen size={20} className="text-green-500" />,
+    image: "/lecturers/kholodenko.jpg",
+    email: "kholodenko@onmu.edu.ua"
+  },
+    {
+    name: "Чебанова Тетяна Євгенівна",
+    role: "Доцент кафедри",
+    degree: "Кандидат економічних наук",
+    academicTitle: "Доцент",
+    interests: ["морський бізнес, бізнес-моделі та процесу, управління фінансами, логістика, цифровий маркетинг, цифрові технології в бізнесі, маркетингу"],
+    icon: <BookOpen size={20} className="text-green-500" />,
+    image: "/lecturers/chebanova.jpg",
+    email: "chebanova@onmu.edu.ua"
+  },  {
+    name: "Котлубай Олексій Михайлович",
+    role: "Доцент кафедри",
+    degree: "Кандидат економічних наук",
+    academicTitle: "Доцент",
+    interests: ["морський бізнес, бізнес-моделі та процесу, управління фінансами, логістика, цифровий маркетинг, цифрові технології в бізнесі, маркетингу"],
+    icon: <BookOpen size={20} className="text-green-500" />,
+    image: "/lecturers/kotlubay.jpg",
+    email: "kotlubay@onmu.edu.ua"
+  },
 ];
 
 export default function Faculty() {
@@ -95,7 +150,12 @@ export default function Faculty() {
                 <div className="flex items-start gap-3">
                   <Award size={18} className="text-blue-500 shrink-0 mt-0.5" />
                   <p className="text-[11px] text-slate-500 font-bold uppercase tracking-tight">{person.degree}</p>
-                </div>                
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <GraduationCap size={18} className="text-blue-500 shrink-0 mt-0.5" />
+                  <p className="text-[11px] text-slate-500 font-bold uppercase tracking-tight">{person.academicTitle}</p>
+                </div>
                 
                 <div className="flex flex-wrap gap-2">
                   {person.interests.map((interest, i) => (
