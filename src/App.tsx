@@ -7,6 +7,8 @@ import Contacts from './pages/Contacts';
 import Faculty from './pages/Faculty';
 import ContentPage from './pages/ContentPage';
 import About from './pages/About';
+import DocumentPage from './pages/educationPlan';
+
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/contacts" element={<Contacts />} />        
             <Route path="/:category/:id" element={<ContentPage />} />
             <Route path="/about/:id" element={<About />} />
+            <Route path="/about/0" element={<DocumentPage />} />
+
           </Routes>
         </main>
 
