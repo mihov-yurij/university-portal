@@ -8,7 +8,7 @@ import Faculty from './pages/Faculty';
 import ContentPage from './pages/ContentPage';
 import About from './pages/About';
 import DocumentPage from './pages/educationPlan';
-
+import InternationalProjects from './pages/InternationalProjects';
 
 function App() {
   return (
@@ -27,11 +27,11 @@ function App() {
             <Route path="/:category/:id" element={<ContentPage />} />
             <Route path="/about/:id" element={<About />} />
             <Route path="/about/0" element={<DocumentPage />} />
-
+            <Route path="/international/0" element={<InternationalProjects />} />
           </Routes>
         </main>
 
-        <Footer />
+        <Footer/>
       </div>
     </Router>
   );

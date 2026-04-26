@@ -61,7 +61,7 @@ const staff: StaffMember[] = [
     academicTitle: "Доцент",
     interests: ["моделювання бізнес-процесів підприємницької діяльності, моделювання маркетингової діяльності підприємств, бізнес і стартапи, інформаційні системи і технології в туризмі"],
     icon: <BookOpen size={20} className="text-green-500" />,
-    image: "/lecturers/melnikov.jpg",
+    image: "/lecturers/melnikov.png",
     email: "melnikov@onmu.edu.ua"
   },
   {
@@ -71,7 +71,7 @@ const staff: StaffMember[] = [
     academicTitle: "Доцент",
     interests: ["морський бізнес, бізнес-моделі та процесу, управління фінансами, логістика, цифровий маркетинг, цифрові технології в бізнесі, маркетингу"],
     icon: <BookOpen size={20} className="text-green-500" />,
-    image: "/lecturers/remzina.jpg",
+    image: "/lecturers/remzina.png",
     email: "remzina@onmu.edu.ua"
   },
     {
@@ -100,7 +100,7 @@ const staff: StaffMember[] = [
     academicTitle: "Доцент",
     interests: ["морський бізнес, бізнес-моделі та процесу, управління фінансами, логістика, цифровий маркетинг, цифрові технології в бізнесі, маркетингу"],
     icon: <BookOpen size={20} className="text-green-500" />,
-    image: "/lecturers/kotlubay.jpg",
+    image: "/lecturers/kotlubay.png",
     email: "kotlubay@onmu.edu.ua"
   },
 ];
