@@ -93,12 +93,12 @@ const About: React.FC = () => {
 <div className="overflow-hidden"> {/* Обертка для чистого флоата */}
   <img 
     src="/lecturers/navrozova.jpg" 
-    className="float-left mr-8 mb-4 rounded-2xl border border-white/10 shadow-2xl w-56 md:w-64 h-auto object-cover" 
+    className="float-left mr-6 mb-4 rounded-xl border border-white/10 shadow-lg w-56 h-auto object-cover"
     alt="Наврозова Юлія Олександрівна" 
   />
   
   <p className="text-lg md:text-xl text-white/90 leading-relaxed font-light">
-    <span className="text-yellow-400 font-medium">Відповідальним секретарем</span> є нинішня завідувачка кафедри Наврозова Ю.О. 
+    Відповідальним секретарем є нинішня завідувачка кафедри Наврозова Ю.О. 
     У 2019 році у відповідь на виклики часу та запит на інноваційні компетенції у студентів на кафедрі був створений підприємницький клуб YEP! ОНМУ , який об’єднав креативну студентську мо-
                   лодь, ініціативних викладачів та передових бізнесменів. Кожний семестр проводиться конкурс стар-
                   тап-проєктів . Очолює таку ініціативу доцент Гребенник Н.Г. За останні 5 роки колективом кафедри
