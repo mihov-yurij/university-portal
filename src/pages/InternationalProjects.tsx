@@ -105,12 +105,12 @@ case 'bulgaria':
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
         <img 
           src="/img/bulgaria1.png" 
-          className="rounded-xl border border-white/10 shadow-lg w-full h-83 object-cover" 
+          className="rounded-xl border border-white/10 shadow-lg w-full h-72 object-cover" 
           alt="Стажування 2" 
         />
         <img 
           src="/img/bulgaria.png" 
-          className="rounded-xl border border-white/10 shadow-lg w-full h-80 object-cover" 
+          className="rounded-xl border border-white/10 shadow-lg w-full h-72 object-cover" 
           alt="Стажування 3" 
         />
       </div>
