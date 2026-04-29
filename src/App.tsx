@@ -10,6 +10,7 @@ import About from './pages/About';
 import DocumentPage from './pages/educationPlan';
 import InternationalProjects from './pages/InternationalProjects';
 import InternationalMobile from './pages/InternationalMobile';
+import InternationalReports from './pages/InternationalReports'; 
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="/about/0" element={<DocumentPage />} />
             <Route path="/international/0" element={<InternationalProjects />} />
             <Route path="/international/mobile" element={<InternationalMobile />} />
+            <Route path="/international/3" element={<InternationalReports />} />
           </Routes>
         </main>
 
