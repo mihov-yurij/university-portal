@@ -9,6 +9,7 @@ import ContentPage from './pages/ContentPage';
 import About from './pages/About';
 import DocumentPage from './pages/educationPlan';
 import InternationalProjects from './pages/InternationalProjects';
+import InternationalMobile from './pages/InternationalMobile';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/about/:id" element={<About />} />
             <Route path="/about/0" element={<DocumentPage />} />
             <Route path="/international/0" element={<InternationalProjects />} />
+            <Route path="/international/mobile" element={<InternationalMobile />} />
           </Routes>
         </main>
 
