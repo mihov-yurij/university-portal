@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import pdfWorker from 'pdfjs-dist/build/pdf.worker.mjs?url';
-import { FileText, Loader2, ChevronRight, GraduationCap, Quote, BookOpen } from 'lucide-react';
+import { Loader2, ChevronRight, GraduationCap, Quote, BookOpen } from 'lucide-react';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
