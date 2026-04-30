@@ -12,6 +12,7 @@ import InternationalMobile from './pages/InternationalMobile';
 import InternationalReports from './pages/InternationalReports';
 import InternationalInternship from './pages/InternationalInternship';
 import EdPlans from './pages/edPlans';
+import MTZ from './pages/mtz'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
             {/* Офіційні документи И Освітні програми (теперь оба здесь) */}
             <Route path="/about/0" element={<Admission />} />
+            <Route path="/about/4" element={<MTZ/>} />
             <Route path="/education/0" element={<EdPlans />} />
             <Route path="/admission" element={<Admission />} />
 
