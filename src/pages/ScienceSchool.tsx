@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { GraduationCap, Users, BookOpen, ExternalLink, Link as LinkIcon, FileCheck, Globe } from 'lucide-react';
+import { GraduationCap, Users, FileCheck, Globe } from 'lucide-react';
 
 const MEMBERS = [
   {
@@ -256,10 +256,8 @@ export default function ScienceSchool() {
     )}
   </div>
 )}
-
-
-          </div>
-
+   
+</div>
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
              <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm">
