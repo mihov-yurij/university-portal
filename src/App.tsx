@@ -12,8 +12,9 @@ import InternationalMobile from './pages/InternationalMobile';
 import InternationalReports from './pages/InternationalReports';
 import InternationalInternship from './pages/InternationalInternship';
 import EdPlans from './pages/edPlans';
-import MTZ from './pages/mtz'
+import MTZ from './pages/mtz';
 import ScienceReport from './pages/ScienceReport';
+import ScienceSchool from './pages/ScienceSchool';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path="/international/2" element={<InternationalInternship />} />
             {/* Научная деятельность */}
             <Route path="/science/4" element={<ScienceReport />} />
+            <Route path="/science/1" element={<ScienceSchool />} />
           </Routes>
         </main>
 
