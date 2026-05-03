@@ -112,10 +112,13 @@ export default function ScienceSchool() {
     setLoading(false);
   }
   return (
-    <div className="bg-white min-h-screen font-sans overflow-x-hidden">
+    <div className="science-main-bg min-h-screen font-sans overflow-x-hidden">
       {/* HEADER SECTION */}
-      <section className="bg-[#1a2c3d] text-white py-12 md:py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-[url('/img/cargoship.jpg')] bg-cover bg-center bg-no-repeat text-white py-12 md:py-20">
+ 
+
+
+        <div className="relative container mx-auto px-4">
           <div className="flex items-center gap-4 mb-6">
             <GraduationCap className="text-yellow-400" size={32} />
             <p className="text-yellow-400 font-black uppercase tracking-[0.3em] text-[10px] md:text-xs">Наукова школа</p>
@@ -284,37 +287,7 @@ export default function ScienceSchool() {
           </div>
         </div>
       </section>
-      {/* {activeDoc && (
-  <div className="mt-10 p-6 bg-white rounded-xl shadow-lg border">
-    <div className="flex justify-between items-center mb-6">
-      <h3 className="text-xl font-bold text-[#1a2c3d]">Документ: {activeDoc}</h3>
-      <button 
-        onClick={() => { setImages([]); setActiveDoc(null); }}
-        className="text-red-500 hover:underline font-medium"
-      >
-        Закрыть просмотр
-      </button>
-    </div>
 
-    {loading ? (
-      <div className="flex flex-col items-center py-10">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-[#1a2c3d] mb-4"></div>
-        <p className="text-slate-500">Загрузка страниц документа...</p>
-      </div>
-    ) : (
-      <div className="flex flex-col gap-8 bg-slate-100 p-4 rounded-lg">
-        {images.map((img, i) => (
-          <img 
-            key={i} 
-            src={img} 
-            className="w-full h-auto shadow-md border bg-white" 
-            alt={`Page ${i + 1}`} 
-          />
-        ))}
-      </div>
-    )}
-  </div>
-)} */}
 
     </div>
   );

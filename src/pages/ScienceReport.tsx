@@ -45,8 +45,8 @@ export default function ScienceReport() {
     setLoading(false);
   }
 
-  return (
-    <div className="flex flex-col font-sans bg-white min-h-screen pb-20">
+  return ( <div className="science-main-bg min-h-screen font-sans overflow-x-hidden">
+    {/* // <div className="flex flex-col font-sans bg-white min-h-screen pb-20"> */}
       <section className="py-16 bg-[#1a2c3d] text-white">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">

@@ -184,14 +184,13 @@
 }
 .maritime-bg {
   background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), 
-                    url('/back/business.jpg');
+                    url('/back/business.jpg'); 
   background-size: cover;
   background-position: center;
-  background-attachment: scroll; /* Для внутреннего блока лучше использовать scroll */
+  background-attachment: scroll;
   background-repeat: no-repeat;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-
 
