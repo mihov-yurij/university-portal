@@ -15,6 +15,7 @@ import EdPlans from './pages/edPlans';
 import MTZ from './pages/mtz';
 import ScienceReport from './pages/ScienceReport';
 import ScienceSchool from './pages/ScienceSchool';
+import ScienceArticle from './pages/ScienceArticle';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
             {/* Научная деятельность */}
             <Route path="/science/4" element={<ScienceReport />} />
             <Route path="/science/1" element={<ScienceSchool />} />
+            <Route path="/science/2" element={<ScienceArticle />} />
           </Routes>
         </main>
 
