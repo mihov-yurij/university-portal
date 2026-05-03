@@ -108,7 +108,6 @@ ORSID https://orcid.org/0000-0002-5753-683X
     degree: "Кандидат економічних наук",
     interests: ["морський бізнес, бізнес-моделі та процесу, управління фінансами, логістика, цифровий маркетинг, цифрові технології в бізнесі, маркетингу"],
     icon: <BookOpen size={20} className="text-green-500" />,
-//     image: "/lecturers/kotlubay.png",
     academicTitle: "Доцент",    
     image: "/lecturers/kotlubay.png", 
     email: "kotlubay@onmu.edu.ua", 
@@ -213,8 +212,6 @@ ORSID https://orcid.org/0000-0002-5753-683X
                   onError={(e) => { (e.target as HTMLImageElement).src = 'https://placeholder.com'; }}
                 />
               </div>
-
-              {/* Контент карточки */}
               <div className="p-2 flex-grow flex flex-col">
                 <p className="text-xs font-bold text-orange-600 uppercase tracking-widest mb-2">{member.role}</p>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 leading-tight">{member.name}</h3>
@@ -229,8 +226,6 @@ ORSID https://orcid.org/0000-0002-5753-683X
                     <span>{member.academicTitle}</span>
                   </div>
                 </div>
-
-                {/* Теги интересов */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {member.interests.map((interest, i) => (
                     <span key={i} className="px-2 py-1 bg-blue-50 text-blue-700 text-[10px] font-semibold rounded uppercase tracking-wider">
@@ -238,12 +233,9 @@ ORSID https://orcid.org/0000-0002-5753-683X
                     </span>
                   ))}
                 </div>
-
-                {/* Кнопка открытия */}
                 <button 
                   onClick={() => setSelectedMember(member)}
-                  className="mt-auto flex items-center justify-center gap-2 bg-blue-900 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors"
-                >
+                  className="mt-auto flex items-center justify-center gap-2 bg-blue-900 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition-colors">
                   <BookOpen size={18} />
                   Докладніше
                 </button>
@@ -252,8 +244,6 @@ ORSID https://orcid.org/0000-0002-5753-683X
           ))}
         </div>
       </div>
-
-      {/* --- МОДАЛЬНОЕ ОКНО --- */}
       {selectedMember && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
           <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col animate-in fade-in zoom-in duration-300">
@@ -267,8 +257,6 @@ ORSID https://orcid.org/0000-0002-5753-683X
                 ✕
               </button>
             </div>
-
-            {/* Текст биографии */}
             <div className="p-8 overflow-y-auto">
               <div className="prose prose-blue max-w-none text-gray-700 leading-relaxed">
                 {selectedMember.text.map((paragraph, i) => (

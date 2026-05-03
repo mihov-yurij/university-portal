@@ -1,25 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, FileText, Download, ShieldCheck, Printer, Loader2 } from 'lucide-react';
-
-// 1. Импортируем всё из pdfjs-dist
 import * as pdfjsLib from 'pdfjs-dist';
-
-// 2. ИМПОРТИРУЕМ ВОРКЕР НАПРЯМУЮ (Vite это понимает)
 import pdfWorker from 'pdfjs-dist/build/pdf.worker.mjs?url';
 
-// 3. Назначаем путь к воркеру
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 export default function ContentPage() {
-  // ... остальной код компонента без изменений
-
   const pdfPath = "/docs/plan_2025.pdf";
-  
-  // Состояния для хранения массива картинок и процесса загрузки
   const [images, setImages] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     async function convertPdfToImages() {
       try {
@@ -28,31 +18,23 @@ export default function ContentPage() {
         const pdf = await loadingTask.promise;
         const totalPages = pdf.numPages;
         const imgArray: string[] = [];
-
-        // Проходим по каждой странице и конвертируем в PNG
         for (let i = 1; i <= totalPages; i++) {
           const page = await pdf.getPage(i);
-          const viewport = page.getViewport({ scale: 2.0 }); // 2.0 для высокой четкости
+          const viewport = page.getViewport({ scale: 2.0 }); 
           const canvas = document.createElement('canvas');
           const context = canvas.getContext('2d');
-
-     // ... внутри функции convertPdfToImages
 if (context) {
   canvas.height = viewport.height;
   canvas.width = viewport.width;
-
   const renderContext = {
     canvasContext: context,
     viewport: viewport,
-    canvas: canvas, // Это решает проблему
+    canvas: canvas,
   };
-
   await page.render(renderContext).promise;
   imgArray.push(canvas.toDataURL('image/png'));
 }
-// ...
-
-        }
+       }
         setImages(imgArray);
       } catch (error) {
         console.error("Ошибка при конвертации PDF:", error);
@@ -67,8 +49,6 @@ if (context) {
   return (
     <div className="min-h-screen bg-slate-50 py-12 font-sans text-left">
       <div className="container mx-auto px-4 max-w-6xl">
-        
-        {/* Кнопка Назад */}
         <Link 
           to="/" 
           className="inline-flex items-center gap-2 text-slate-400 hover:text-[#1a2c3d] mb-8 font-black uppercase text-[10px] tracking-[0.2em] transition-all group"
@@ -76,8 +56,6 @@ if (context) {
           <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> 
           Назад на головну
         </Link>
-
-        {/* Заголовок */}
         <header className="mb-12">
           <div className="flex items-center gap-3 text-blue-600 mb-4">
             <ShieldCheck size={24} />
@@ -114,8 +92,6 @@ if (context) {
                 </a>
               </div>
             </div>
-
-            {/* ПЛОЩАДЬ ДЛЯ ОТОБРАЖЕНИЯ ИЗОБРАЖЕНИЙ */}
             <div className="bg-slate-100 min-h-[600px] relative p-4 md:p-8 flex flex-col gap-8 items-center">
               {loading ? (
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 text-slate-500">

@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
-
 const Footer = () => {
   return (
     <footer className="bg-[#0f172a] text-slate-400 py-12 border-t border-white/5 font-sans mt-auto text-left">

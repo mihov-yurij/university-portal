@@ -30,8 +30,6 @@ const InternationalInternship = () => {
           <div className="w-24 h-2 bg-yellow-500"></div>
         </div>
       </div>
-
-      {/* Контент с таблицей */}
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
           <div className="p-6 border-b border-slate-100 bg-slate-50/50 flex justify-between items-center">
@@ -68,8 +66,6 @@ const InternationalInternship = () => {
             </table>
           </div>
         </div>
-
-        {/* Примечание */}
         <div className="mt-8 flex items-start gap-4 p-6 bg-blue-50 rounded-xl border border-blue-100">
           <FileText className="text-blue-500 shrink-0" />
           <p className="text-xs text-blue-800 leading-relaxed italic">

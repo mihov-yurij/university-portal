@@ -5,7 +5,6 @@ import { Loader2, ChevronRight, GraduationCap, Quote, BookOpen } from 'lucide-re
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
-// --- 1. ТИПИЗАЦИЯ (БЕЗ ANY) ---
 interface SectionItem {
   name?: string;
   file?: string;
@@ -31,7 +30,6 @@ interface ProgramData {
   studyPlans: StudyPlan[];
 }
 
-// --- 2. КОМПОНЕНТ СЕКЦИИ (СТИЛЬ КАК НА СКРИНШОТЕ) ---
 const ProgramSection = ({ data, activeDoc, onLoadPdf }: { data: ProgramData, activeDoc: string | null, onLoadPdf: (f: string) => void }) => (
   <section className="mb-14">
     {/* Заголовки */}
@@ -62,8 +60,6 @@ const ProgramSection = ({ data, activeDoc, onLoadPdf }: { data: ProgramData, act
         )
       ))}
     </div>
-
-    {/* Блок Гаранта (белый, лаконичный) */}
     <div className="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm mb-8">
       <div className="flex items-center gap-2 mb-6 border-b pb-2 border-slate-100">
         <Quote size={18} className="text-yellow-500" />
@@ -74,8 +70,6 @@ const ProgramSection = ({ data, activeDoc, onLoadPdf }: { data: ProgramData, act
       <div className="text-slate-500 text-[15px] leading-relaxed text-justify whitespace-pre-line font-medium">
   {data.guarantor.bio}</div>
     </div>
-
-    {/* Учебные планы */}
     <div className="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden text-[10px]">
       <div className="p-4 bg-slate-50 border-b border-slate-200 text-[#1a2c3d] font-black uppercase tracking-tighter">
         Навчальні плани
@@ -137,8 +131,6 @@ export default function EdPlans() {
     } catch (e) { console.error(e); }
     setLoading(false);
   }
-
-  // --- ДАННЫЕ ---
   const SECTIONS: ProgramData[] = [
     {
       level: "ПЕРШИЙ (БАКАЛАВРСЬКИЙ) РІВЕНЬ ВИЩОЇ ОСВІТИ",
@@ -242,8 +234,7 @@ bio: (
       Гарант освітньо-професійної програми «Маркетинг і бізнес-аналітика» Чебанова Тетяна Євгенівна. 
       Кандидат економічних наук, доцент кафедри «Морський бізнес та маркетинг», заступник директора Інституту морського бізнесу.
     </p>
-    <p>
-      Народилася в місті Джезказган Казахської РСР в родині службовців. В 1990 рр. закінчила Одеський інститут інженерів морського флоту...
+    <p> Народилася в місті Джезказган Казахської РСР в родині службовців. В 1990 рр. закінчила Одеський інститут інженерів морського флоту...
       (зараз Одеський національний
 морський університет) за спеціальністю «Фінанси та кредит» (кваліфікація - економіст по
 фінансам морського транспорту), отримала диплом з відзнакою. У 2019 році захистила
@@ -263,25 +254,17 @@ bio: (
 розробок за основними навчальними дисциплінами. Розроблено 10 контентів
 дистанційних курсів. З 2022 року є керівником постійно діючого студентського наукового
 гуртка «Фінансовий аналітик» Навчально-наукового інституту інформаційних технологій
-та інноваційного підприємництва. Є дійсним членом Української асоціації маркетингу.
-    </p>
+та інноваційного підприємництва. Є дійсним членом Української асоціації маркетингу.</p>
   </div>
-)
-
-
-
-      },
+) },
       studyPlans: [{ year: "2024", fullTime: "plan_mkt_24_d.pdf", partTime: "plan_mkt_24_z.pdf" },
                    { year: "2025", fullTime: "plan_mkt_25_d.pdf", partTime: "plan_mkt_25_z.pdf" }
       ]
     }
   ];
-
   return (
     <div className="min-h-screen bg-slate-50 py-10 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-        
-        {/* ЛЕВАЯ КОЛОНКА */}
         <div className="space-y-6 overflow-y-auto max-h-[92vh] pr-4 custom-scrollbar">
           <div className="bg-[#1a2c3d] text-white p-6 rounded-2xl shadow-lg mb-10 flex items-center gap-4">
             <BookOpen size={40} className="text-yellow-400" />
@@ -291,8 +274,6 @@ bio: (
             <ProgramSection key={idx} data={sec} activeDoc={activeDoc} onLoadPdf={loadPdf} />
           ))}
         </div>
-
-        {/* ПРАВАЯ КОЛОНКА */}
         <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 p-4 sticky top-5 min-h-[750px] overflow-y-auto max-h-[92vh]">
           {loading ? (
             <div className="flex flex-col items-center justify-center h-full my-40 text-center">

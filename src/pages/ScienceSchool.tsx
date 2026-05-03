@@ -113,11 +113,7 @@ export default function ScienceSchool() {
   }
   return (
     <div className="science-main-bg min-h-screen font-sans overflow-x-hidden">
-      {/* HEADER SECTION */}
       <section className="relative bg-[url('/img/cargoship.jpg')] bg-cover bg-center bg-no-repeat text-white py-12 md:py-20">
- 
-
-
         <div className="relative container mx-auto px-4">
           <div className="flex items-center gap-4 mb-6">
             <GraduationCap className="text-yellow-400" size={32} />
@@ -138,8 +134,6 @@ export default function ScienceSchool() {
           </div>
         </div>
       </section>
-
-      {/* MEMBERS SECTION */}
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="space-y-16 md:space-y-24">
@@ -184,16 +178,12 @@ export default function ScienceSchool() {
           </div>
         </div>
       </section>
-
-      {/* RESEARCH WORK SECTION */}
       <section className="py-12 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-xl md:text-3xl font-black text-[#1a2c3d] uppercase mb-10 md:mb-12 flex items-center gap-4">
             <span className="w-8 md:w-12 h-1 bg-yellow-500"></span>
             Науково-дослідна робота кафедри
           </h2>
-          
-          {/* Main Research Card */}
           <div className="bg-white p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-xl border border-slate-100 mb-8 md:mb-10">
             <p className="text- font-black text-[9px] md:text-3x1 tracking-widest uppercase mb-4">Науково-дослідна тема, над якою працює колектив кафедри «Підприємництво та туризм»: </p>
             <h4 className="text-lg md:text-xl font-black text-[#1a2c3d] uppercase leading-tight mb-6 break-words">
@@ -261,7 +251,6 @@ export default function ScienceSchool() {
 )}
    
 </div>
-          {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
              <div className="bg-white p-6 md:p-8 rounded-[2rem] border border-slate-100 shadow-sm">
                 <p className="text-blue-600 font-black text-[9px] md:text-[10px] tracking-widest uppercase mb-4">Заявки на участь у міжнародних проектах</p>
@@ -287,8 +276,6 @@ export default function ScienceSchool() {
           </div>
         </div>
       </section>
-
-
     </div>
   );
 }

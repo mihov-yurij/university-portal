@@ -21,37 +21,28 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col font-sans">     
-        <Navbar />       
+        <Navbar />     
         
         <main className="maritime-bg flex-grow">
           <Routes>
-            {/* Основные страницы */}
             <Route path="/" element={<Home />} />
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/contacts" element={<Contacts />} />
-
-            {/* Офіційні документи И Освітні програми (теперь оба здесь) */}
             <Route path="/about/0" element={<Admission />} />
             <Route path="/about/4" element={<MTZ/>} />
             <Route path="/education/0" element={<EdPlans />} />
             <Route path="/admission" element={<Admission />} />
-
-            {/* Динамические маршруты для остальных страниц */}
             <Route path="/about/:id" element={<About />} />
             <Route path="/:category/:id" element={<ContentPage />} />
-
-            {/* Международная деятельность */}
             <Route path="/international/0" element={<InternationalProjects />} />
             <Route path="/international/mobile" element={<InternationalMobile />} />
             <Route path="/international/3" element={<InternationalReports />} />
             <Route path="/international/2" element={<InternationalInternship />} />
-            {/* Научная деятельность */}
             <Route path="/science/4" element={<ScienceReport />} />
             <Route path="/science/1" element={<ScienceSchool />} />
             <Route path="/science/2" element={<ScienceArticle />} />
           </Routes>
         </main>
-
         <Footer/>
       </div>
     </Router>

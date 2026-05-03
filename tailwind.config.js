@@ -7,10 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Ваши основные цвета
         'edu-blue': '#1a2c3d',
         'edu-gold': '#fbbf24',
-        // Дополнительные названия для удобства
         'navy': '#1a2c3d',
         'gold': '#eab308',
       },

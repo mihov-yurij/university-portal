@@ -5,8 +5,6 @@ import { ChevronDown, Menu, Phone, X } from 'lucide-react';
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // Вспомогательная функция для определения путей
   const getLinkPath = (key: string, item: string, idx: number) => {
     if (item === "Викладацький склад") return "/faculty";
     if (item === "Міжнародна академічна мобільність") return "/international/mobile";

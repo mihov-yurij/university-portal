@@ -4,8 +4,6 @@ import pdfWorker from 'pdfjs-dist/build/pdf.worker.mjs?url';
 import { FileText, Loader2, ChevronRight, ShieldCheck } from 'lucide-react';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
-
-// Списки ваших файлов
 const REGLAMENT_DOCS = [
   { name: "Положення про організацію освітнього процесу", file: "polog_org.pdf" },
   { name: "Положення про порядок розроблення та перегляд освітніх програм", file: "procedure.pdf" },
@@ -23,8 +21,6 @@ const EVALUATION_DOCS = [
   { name: "Положення про конфліктні ситуації", file: "conflict_resolve.pdf" },
   { name: "Рейтинг НПП 2024-2025", file: "npp_rating.pdf" }
 ];
-
-
 export default function Admission() {
   const [images, setImages] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
@@ -58,16 +54,10 @@ export default function Admission() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      {/* Ваша шапка из скриншота */}
       <section className="bg-[#1a2c3d] text-white py-20 px-4 relative overflow-hidden">
-         {/* ... ваш текущий код шапки ... */}
       </section>
-
-      {/* НОВАЯ СЕКЦИЯ С ДОКУМЕНТАМИ */}
       <div className="container mx-auto max-w-6xl py-12 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          
-          {/* Кнопки слева */}
           <div className="space-y-8">
             <div>
               <h3 className="text-[#1a2c3d] font-black uppercase text-sm mb-4 border-b border-yellow-500 pb-2 flex items-center gap-2">
@@ -97,8 +87,6 @@ export default function Admission() {
               </div>
             </div>
           </div>
-
-          {/* Просмотр справа */}
           <div className="bg-white rounded-xl shadow-inner border border-slate-200 p-4 sticky top-24 min-h-[500px] max-h-[80vh] overflow-y-auto">
             {loading ? (
               <div className="flex flex-col items-center justify-center h-64 text-slate-400">

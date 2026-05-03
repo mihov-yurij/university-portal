@@ -1,9 +1,7 @@
 import { FadeIn } from '../components/FadeIn';
-
 export default function MTZ() {
   return (
     <div className="flex flex-col font-sans bg-white">
-      {/* Header Section */}
       <section className="py-16 bg-[#1a2c3d] text-white">
         <div className="container mx-auto px-4 text-center md:text-left">
           <FadeIn>
@@ -14,8 +12,6 @@ export default function MTZ() {
           </FadeIn>
         </div>
       </section>
-
-      {/* Main Content Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -42,7 +38,6 @@ export default function MTZ() {
                   комп’ютерними програмами є достатньою для виконання навчальних планів. Перелік системних блоків та моніторів в навчальній ла
                   бораторії каф. «Морський бізнес та маркетинг» наведено в таблиці нижче.
                 </p>
-                {/* TABLE SECTION */}
                 <div className="overflow-x-auto mt-12 mb-12 clear-both">
                   <table className="w-full border-collapse rounded-2xl overflow-hidden shadow-lg border border-slate-100">
                     <thead className="bg-[#1a2c3d] text-white uppercase text-[12px] font-black tracking-widest">
@@ -74,25 +69,13 @@ export default function MTZ() {
                       </tr>
                     </tbody>
                   </table>
-                </div>
-
-
-
-
-
-
-                <p className="mb-8">
-                  Аудиторія 511 л забезпечена мультимедійним обладнанням та використовується окрім навчальних занять, для захисту бакалаврських та магістерських робіт,
+                </div><p className="mb-8">Аудиторія 511 л забезпечена мультимедійним обладнанням та використовується окрім навчальних занять, для захисту бакалаврських та магістерських робіт,
                    проведення майстер-класів, тренінгів, круглих столів, студентських конференцій, засідань наукових гуртків «Бізнес-консалт», «Фінансовий
                     аналітик», «Фортуна», «Наукова проблема група туристичних досліджень». Щорічно проводяться майстер класи, круглі столи, конференції,
                      захисти кваліфікаційних робіт (бакалаври та магістри).</p>
                 <div className="float-left mr-10 mb-8 w-full md:w-[480px]">
                   <img src="/img/guard.png" alt="Захист" className="rounded-[2.5rem] shadow-2xl border border-slate-100 w-full object-cover" />
-                </div>
-
-
-                <p className="mb-8">
-                  «Підприємницький (StartUp) клуб ОНМУ» створений для підвищення рівня обізнаності про стартап екосистему
+                </div><p className="mb-8">«Підприємницький (StartUp) клуб ОНМУ» створений для підвищення рівня обізнаності про стартап екосистему
                    та розвиток підприємницького мислення і культури серед студентів, викладачів, молодих вчених та інших 
                    представників академічного середовища, підвищення освітньо-культурного і професійного рівня громадян,                                   
                    розвиток підприємницьких здібностей, популяризація та впровадження в практику новітніх методик акселе
@@ -104,8 +87,7 @@ export default function MTZ() {
                     стартапів, що проводяться як одеським національним морським університетом, так і іншими ЗВО. 
 
                 </p>                 
-                <div className="space-y-8 mt-16 clear-both">
-                  <p className="mb-8">Бібліотечний фонд налічує понад 800000 од. зберігання наукової та навчально- методичної 
+                <div className="space-y-8 mt-16 clear-both"><p className="mb-8">Бібліотечний фонд налічує понад 800000 од. зберігання наукової та навчально- методичної 
                     літератури. За допомогою автоматизованої системи <span className="font-bold">«UNI LIBRARY»</span> під час дистанційного навчання здобувачі 
                     мають доступ до онлайн-бібліотеки.В ОНМУ є доступ до міжнародних наукометричних баз даних Scopus, 
                     безкоштовний Wi-Fi.Для всіх ОК розроблені робочі програми, які містять заплановані результати навчання та 
@@ -116,8 +98,7 @@ export default function MTZ() {
 Безпечність освітнього середовища для життя та здоров’я здобувачів ВО забезпечується шляхом:</p>
 <div className="float-right ml-10 mb-8 w-full md:w-[480px]">
                   <img src="/img/stup-club.png" alt="Стартап клуб" className="rounded-[2.5rem] shadow-2xl border border-slate-100 w-full object-cover" />
-                </div>
-                <p className="mb-8">
+                </div><p className="mb-8">
 підтримки всіх будівель, приміщень, прибудинкової території та інженерних систем у відповідності до чинних норм, правил експлуатації та санітарії;
 проведення для здобувачів ВО інструктажів з техніки безпеки, цивільного захисту, надання домедичної допомоги;
 організації централізованого харчування здобувачів та перерви тривалістю 20 хвилин після другої пари занять;
@@ -136,20 +117,14 @@ export default function MTZ() {
                       <li>Забезпечення психолого-педагогічних умов через <a href="https://onmu.odessa.ua" target="_blank" className="text-blue-600 hover:underline">Центр психологічної служби ОНМУ</a>.</li>
                     </ul>
                   </div>
-
                   <div className="bg-yellow-50/50 p-8 rounded-[2.5rem] border border-yellow-200/50">
                     <h4 className="text-[#1a2c3d] font-black uppercase text-sm tracking-widest mb-4">Умови під час воєнного стану</h4>
-                    <p>
-                      Під час війни було організовано <span className="font-bold">два укриття</span>, що пройшли перевірку та отримали дозвіл на експлуатацію. Також було організовано <span className="font-bold">Пункт незламності</span>. Випадків порушень та травмувань не зафіксовано.
-                    </p>
+                    <p>Під час війни було організовано <span className="font-bold">два укриття</span>, що пройшли перевірку та отримали дозвіл на експлуатацію. Також було організовано <span className="font-bold">Пункт незламності</span>. Випадків порушень та травмувань не зафіксовано.</p>
                   </div>
-
                   <p className="text-2xl font-black text-[#1a2c3d] pt-8 text-center uppercase tracking-tight">
                     Кафедра морського бізнесу та маркетингу має належні умови для підготовки фахівців ОКР «бакалавр», «магістр».
                   </p>
-                </div>
-
-                <div className="clear-both"></div>
+                </div>              
               </div>
             </FadeIn>
           </div>

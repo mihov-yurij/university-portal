@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 interface ProjectBlock {
   id: number;
-  type: string; // Изменили с конкретных значений на просто string
+  type: string;
   title: string;
   img: string;
   side: string;
@@ -14,7 +14,6 @@ interface ProjectBlock {
 }
 
 const InternationalProjects: React.FC = () => {
-  // Явно указываем тип массива ProjectBlock[]
   const blocks: ProjectBlock[] = [
     { 
       id: 1, 
@@ -49,12 +48,10 @@ const InternationalProjects: React.FC = () => {
 
   ];
 
-  // Здесь аргумент теперь тоже ProjectBlock
+
   const getContent = (block: ProjectBlock) => {
     switch (block.type) {
       case 'workshop':
-        // ... ваш код
-
         return (
           <>
             <p className="mb-6 text-justify">
@@ -100,19 +97,15 @@ case 'bulgaria':
   return (
     <>
       <p className="mb-6">{block.desc}</p>
-      
-      {/* Сетка из дополнительных фото */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
         <img 
           src="/img/bulgaria1.png" 
           className="rounded-xl border border-white/10 shadow-lg w-full h-72 object-cover" 
-          alt="Стажування 2" 
-        />
+          alt="Стажування 2"/>
         <img 
           src="/img/bulgaria.png" 
           className="rounded-xl border border-white/10 shadow-lg w-full h-72 object-cover" 
-          alt="Стажування 3" 
-        />
+          alt="Стажування 3"/>
       </div>
     </>
   );
@@ -121,16 +114,13 @@ case 'cbs':
   return (
     <>
       <p className="mb-4">{block.desc}</p>
-      
-      {/* Добавляем постер */}
       <div className="mb-6">
         <img 
           src="/img/kopeng1.png" 
           className="rounded-xl border border-white/10 shadow-2xl max-w-full h-auto" 
           alt="Center of Excellence" 
         />
-      </div>
-      
+      </div>      
       <ul className="text-sm space-y-1 italic text-yellow-400 font-medium">
         <li>• Ірина Савельєва — “Blue Resistance”</li>
         <li>• Марина Матвієнко — “Decarbonization”</li>
@@ -142,8 +132,6 @@ case 'cbs':
         return <p>{block.desc}</p>;
     }
   };
-
-  // 3. ВЕРСТКА СТОРІНКИ
   return (
     <div className="min-h-screen flex flex-col bg-[#0a192f] text-white">
       <div className="relative z-10 flex-grow">
@@ -161,7 +149,6 @@ case 'cbs':
             </h1>
           </div>
         </header>
-
         <main className="px-6 pb-20 max-w-7xl mx-auto w-full">
           <FadeIn>
             <div className="bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 p-8 md:p-12 shadow-2xl">
@@ -185,7 +172,6 @@ case 'cbs':
           </FadeIn>
         </main>
       </div>
-
       <div className="relative z-20 w-full bg-[#0a192f] border-t border-white/5">
         <Footer />
       </div>
