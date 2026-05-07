@@ -16,7 +16,7 @@ import MTZ from './pages/mtz';
 import ScienceReport from './pages/ScienceReport';
 import ScienceSchool from './pages/ScienceSchool';
 import ScienceArticle from './pages/ScienceArticle';
-
+import Gate from './pages/Gate';
 function App() {
   return (
     <Router>
@@ -26,6 +26,7 @@ function App() {
         <main className="maritime-bg flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/gate" element={<Gate />} />
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/about/0" element={<Admission />} />

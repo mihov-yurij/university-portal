@@ -29,13 +29,13 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link 
-                to="/admission" 
+                to="/gate" 
                 className="bg-yellow-500 text-[#1a2c3d] px-10 py-5 rounded-2xl font-black uppercase tracking-widest hover:bg-yellow-400 transition-all text-center shadow-xl hover:-translate-y-1"
               >
-                Вступити зараз
+                Плануєшь вступ
               </Link>
               <Link 
-                to="/about/0" 
+                to="/about" 
                 className="border-2 border-white/20 hover:/10 px-10 py-5 rounded-2xl font-bold transition-all text-white text-center"
               >
                 Про кафедру
