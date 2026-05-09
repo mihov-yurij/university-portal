@@ -17,6 +17,7 @@ import ScienceReport from './pages/ScienceReport';
 import ScienceSchool from './pages/ScienceSchool';
 import ScienceArticle from './pages/ScienceArticle';
 import Gate from './pages/Gate';
+import GraduatesPage from './pages/Graduates';
 function App() {
   return (
     <Router>
@@ -27,6 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/gate" element={<Gate />} />
+            <Route path="/education/4" element={<GraduatesPage />} />
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/about/0" element={<Admission />} />
