@@ -18,6 +18,7 @@ import ScienceSchool from './pages/ScienceSchool';
 import ScienceArticle from './pages/ScienceArticle';
 import Gate from './pages/Gate';
 import GraduatesPage from './pages/Graduates';
+import ResearchActivity from './pages/Zdob';
 function App() {
   return (
     <Router>
@@ -44,6 +45,7 @@ function App() {
             <Route path="/science/4" element={<ScienceReport />} />
             <Route path="/science/1" element={<ScienceSchool />} />
             <Route path="/science/2" element={<ScienceArticle />} />
+            <Route path="/science/3" element={<ResearchActivity/>} />
           </Routes>
         </main>
         <Footer/>
