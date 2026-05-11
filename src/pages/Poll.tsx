@@ -1,14 +1,11 @@
 import { useState } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import pdfWorker from 'pdfjs-dist/build/pdf.worker.mjs?url';
-import { FileText, Loader2, GraduationCap, Eye, Download, FileCheck} from 'lucide-react';
+import { FileText, Loader2, GraduationCap, Download } from 'lucide-react';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
-const REPORTS = [
-  { id: 1, title: "Звіт з наукової роботи 2024", file: "sci_24.pdf" },
-  { id: 2, title: "Звіт з наукової роботи 2025", file: "sci_25.pdf" }
-];
+
 
 export default function Poll() {
   const [images, setImages] = useState<string[]>([]);
