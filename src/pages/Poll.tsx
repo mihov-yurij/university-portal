@@ -41,8 +41,13 @@ export default function Poll() {
     }
     setLoading(false);
   }
+
   return ( 
-  <div className="science-main-bg min-h-screen font-sans overflow-x-hidden">
+    <div className="min-h-screen w-full flex flex-col  maritime-bg dark:bg-[#0f172a] overflow-x-hidden flex flex-col">
+
+    <main className="w-full flex-grow pt-20 sm:pt-24 lg:pt-32 pb-24 sm:pb-32 px-4 sm:px-6">
+
+      <div className="min-h-screen w-full flex flex-col items-center text-center mb-10 sm:mb-16">
          <section className="py-16 bg-[#1a2c3d] text-white">
         <div className="container mx-auto px-4">
           <div className="flex items-center gap-4 mb-4">
@@ -201,6 +206,8 @@ export default function Poll() {
           </div>
         </div>
       </section>
+    </div>
+    </main>
     </div>
   );
 }

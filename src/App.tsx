@@ -20,6 +20,10 @@ import Gate from './pages/Gate';
 import GraduatesPage from './pages/Graduates';
 import ResearchActivity from './pages/Zdob';
 import Poll from './pages/Poll';
+import { PracticePage } from './pages/Practice';
+
+
+
 function App() {
   return (
     <Router>
@@ -36,6 +40,7 @@ function App() {
             <Route path="/about/0" element={<Admission />} />
             <Route path="/about/4" element={<MTZ/>} />
             <Route path="/education/0" element={<EdPlans />} />
+            <Route path="/education/2" element={<PracticePage />} />
             <Route path="/education/3" element={<Poll />} />
             <Route path="/admission" element={<Admission />} />
             <Route path="/about/:id" element={<About />} />
