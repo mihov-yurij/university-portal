@@ -15,18 +15,72 @@ interface Contract {
 }
 
 const CONTRACTS_DATA: Contract[] = [
-  { subject: "Про організацію практики", company: "MSC Crewing LLC", number: "№54 від 03.09.2020р", date: "До 31.12.2025р", file: "msc_crewing.pdf" },
-  { subject: "Про організацію практики", company: "ПАТ \"ОДЕСКАБЕЛЬ\"", number: "№20/21 від 22.11.2021р.", date: "До 31.12.2026р.", file: "odeskabely.pdf" },
-  { subject: "Про організацію практики", company: "ПП \"ЛЮКС-СМС\"", number: "№3/23 від 03.01.2023р.", date: "До 01.01.2028р.", file: "pologenya.pdf" },
-  { subject: "Про організацію практики", company: "ТОВ \"АВГУСТ-V\"", number: "№4/23 від 03.01.2023р.", date: "До 01.01.2028р", file: "pologenya1.pdf" },
-  { subject: "Про організацію практики", company: "ПП «Стар Транс»", number: "№5/23 від 03.01.2023р.", date: "До 01.01.2028р", file: "pologenya.pdf" },
-  { subject: "Про організацію практики", company: "КП \"Одесміськелектротранс\"", number: "№6/23 від 03.01.2023р", date: "До 01.01.2028р", file: "pologenya1.pdf" },
-  { subject: "Про організацію практики", company: "ТОВ \"МОРТЕЛЕКОМ\"", number: "№8/23 від 04.01.2023р.", date: "До 01.01.2028р.", file: "msc_crewing.pdf" },
-  { subject: "Про організацію практики", company: "ТОВ \"ПОРТУС ЛІБЕРА\"", number: "№9/23 від 04.01.2023р", date: "До 01.01.2028р.", file: "odeskabely.pdf" },
-  { subject: "Про організацію практики", company: "ТОВ \"СЕЛЕКТ БЛЕК СІ ТУРС\"", number: "№10/23 від 04.01.2023р.", date: "До 01.01.2028р.", file: "pologenya.pdf" },
-  { subject: "Про організацію практики", company: "ТОВ \"ІНТЕР ТРАНС ЛОДЖИСТІКС\"", number: "№15/3/23 від 01.02.2023р.", date: "До 02.02.2028р.", file: "pologenya1.pdf" },
-  { subject: "Про організацію практики", company: "ТОВ \"БАСТІКО УКРАЇНА\"", number: "№22/23 від 14.04.2023р.", date: "До 14.04.2023р.", file: "msc_crewing.pdf" },
+
+  {
+    subject: 'Про організацію практики',
+    company: 'MSC CREWING LLC',
+    number: '№54 ВІД 03.09.2020Р',
+    date: '31.12.2026',
+    file: 'Practice_1.pdf'
+  },
+  {
+    subject: 'Про організацію практики',
+    company: 'ПАТ "ОДЕСКАБЕЛЬ"',
+    number: '№20/21 ВІД 22.11.2021Р.',
+    date: '31.12.2026',
+    file: 'Practice_2.pdf'
+  },
+  {
+    subject: 'Про організацію практики',
+    company: 'ПП "ЛЮКС-СМС"',
+    number: '№3/23 ВІД 03.01.2023Р.',
+    date: '31.12.2026',
+    file: 'Practice_3.pdf'
+  },
+  {
+    subject: 'Про організацію практики',
+    company: 'ТОВ "АВГУСТ-V"',
+    number: '№4/23 ВІД 03.01.2023Р.',
+    date: '31.12.2026',
+    file: 'Practice_4.pdf'
+  },
+  {
+    subject: 'Про організацію практики',
+    company: 'ПП «СТАР ТРАНС»',
+    number: '№5/23 ВІД 03.01.2023Р.',
+    date: '31.12.2026',
+    file: 'Practice_5.pdf'
+  },
+  {
+    subject: 'Про организацію практики',
+    company: 'КП "ОДЕСМІСЬКЕЛЕКТРОТРАНС"',
+    number: '№6/23 ВІД 03.01.2023Р.',
+    date: '31.12.2026',
+    file: 'Practice_6.pdf'
+  },
+  {
+    subject: 'Про організацію практики',
+    company: 'ТОВ "МОРТЕЛЕКОМ"',
+    number: '№8/23 ВІД 04.01.2023Р.',
+    date: '31.12.2026',
+    file: 'Practice_7.pdf'
+  },
+  {
+    subject: 'Про організацію практики',
+    company: 'ТОВ "ПОРТУС ЛІБЕРА"',
+    number: '№11/23 ВІД 05.01.2023Р.',
+    date: '31.12.2026',
+    file: 'Practice_8.pdf'
+  },
+  {
+    subject: 'Про організацію практики',
+    company: 'ТОВ "СЕЛЕКТ БЛЕК СІ ТУРС"',
+    number: '№12/23 ВІД 05.01.2023Р.',
+    date: '31.12.2026',
+    file: 'Practice_9.pdf'
+  }
 ];
+
 
 export const PracticePage: FC = () => {
   const [images, setImages] = useState<string[]>([]);
